@@ -1,0 +1,19 @@
+body {
+    margin: 10px auto;
+    width: 800px;
+    }
+    .elo , .siema {
+    float: left;
+    }
+    .elo{
+    width: 25%;
+    }
+    .siema {
+    width: 75%;
+    }
+    p, .elo  a {
+    margin: 10px;
+    }
+    a {
+    display: block;
+    }

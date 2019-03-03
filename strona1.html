@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+            <head>
+                <title>PROSTE DZIAŁANIA</title>
+                <meta charset="utf-8">
+                <link rel="stylesheet" href="style.css">
+            </head>
+         <body>
+                <a href="index.html"><img src="baner.jpg" alt="baner"></a>
+                    <div id="elo">
+                <a href="strona1.html">- proste działania</a>
+                <a href="http://localhost/3d/strona2.php">- potęgowanie</a>
+                    </div>
+                        <div id="siema">
+                    <h1>PROSTE DZIAŁANIA</h1>
+                    <p><i>Podaj pierwszą liczbę:</i>
+                        <input type="number" id="licz1"/></p>
+                    <p><i>Podaj drugą liczbę:</i>
+                        <input type="number" id="licz2"/></p>
+                            <p>
+                                <button onclick="f(1)">DODAWANIE</button>
+                                <button onclick="f(2)">ODEJMOWANIE</button>
+                                <button onclick="f(3)">MNOŻENIE</button>
+                                <button onclick="f(4)">DZIELENIE</button>
+                            </p>
+                                <output id="o1"></output>
+                                </div>
+                            <script>
+                                        function f(x) {
+                                        var q=parseFloat(licz1.value)
+                                        var e=parseFloat(licz2.value)
+                                        var wys
+                                         if (isNaN(q) || isNaN(e)) {
+                                         wys = "Proszę uzupełnić obie liczby"
+                                         }
+                                         else if(x==4 && e==0) {
+                                         wys = "Nie wolno dzielić przez zero"
+                                         }
+                                         else { 
+                                          if (x==1) wys=q+e
+                                          else if(x==2) wys=q-e
+                                          else if(x==3) wys=q*e
+                                          else if(x==4 && e!=0) wys=q/e
+                                          wys="Wynik działania wynosi: "+wys
+                                         }
+                                        o1.value=wys
+                                        }   
+                            </script>
+         </body>
+     </html> 
